@@ -12,7 +12,14 @@ class MyDrawer extends StatelessWidget {
       child: Column(
         children: [
           DrawerHeader(
-            child: Icon(Icons.edit),
+            child: Image.asset(
+              'assets/post-it.png',
+              width: 100,
+              color: Theme.of(context).colorScheme.inversePrimary,
+            ),
+          ),
+          SizedBox(
+            height: 25,
           ),
           DrawerTile(
             title: "Notes",
