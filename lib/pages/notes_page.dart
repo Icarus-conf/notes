@@ -30,6 +30,7 @@ class _NotesPageState extends State<NotesPage> {
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(5.0))),
         backgroundColor: Theme.of(context).colorScheme.background,
+        elevation: 0,
         content: TextField(
           controller: textController,
           decoration: InputDecoration(
@@ -115,6 +116,7 @@ class _NotesPageState extends State<NotesPage> {
       floatingActionButton: FloatingActionButton(
         onPressed: createNote,
         backgroundColor: Theme.of(context).colorScheme.primary,
+        elevation: 0,
         child: Icon(
           Icons.add,
           color: Theme.of(context).colorScheme.inversePrimary,
