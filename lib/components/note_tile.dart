@@ -28,9 +28,12 @@ class NoteTile extends StatelessWidget {
         left: 25,
       ),
       child: ListTile(
-        title: PoppinsText(
-          text: text,
-          fontS: 16,
+        title: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: PoppinsText(
+            text: text,
+            fontS: 16,
+          ),
         ),
         trailing: Builder(
           builder: (context) => IconButton(
