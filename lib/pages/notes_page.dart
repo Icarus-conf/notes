@@ -153,6 +153,9 @@ class _NotesPageState extends State<NotesPage> {
               },
             ),
           ),
+          SizedBox(
+            height: 10,
+          ),
         ],
       ),
     );
