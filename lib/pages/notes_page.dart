@@ -27,13 +27,13 @@ class _NotesPageState extends State<NotesPage> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(5.0))),
         backgroundColor: Theme.of(context).colorScheme.background,
         elevation: 0,
         content: TextField(
           controller: textController,
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
             border: OutlineInputBorder(),
           ),
           maxLines: 7,
@@ -48,7 +48,7 @@ class _NotesPageState extends State<NotesPage> {
 
               Navigator.pop(context);
             },
-            child: PoppinsText(
+            child: const PoppinsText(
               text: 'Create',
               fontS: 16,
             ),
@@ -67,13 +67,13 @@ class _NotesPageState extends State<NotesPage> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(5.0))),
         backgroundColor: Theme.of(context).colorScheme.background,
-        title: Text('Update Note'),
+        title: const Text('Update Note'),
         content: TextField(
           controller: textController,
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
             border: OutlineInputBorder(),
           ),
           maxLines: 7,
@@ -89,7 +89,7 @@ class _NotesPageState extends State<NotesPage> {
               textController.clear();
               Navigator.pop(context);
             },
-            child: Text('Update'),
+            child: const Text('Update'),
           ),
         ],
       ),
@@ -122,7 +122,7 @@ class _NotesPageState extends State<NotesPage> {
           color: Theme.of(context).colorScheme.inversePrimary,
         ),
       ),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
       backgroundColor: Theme.of(context).colorScheme.background,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -136,7 +136,7 @@ class _NotesPageState extends State<NotesPage> {
               fontWeight: FontWeight.w600,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Expanded(

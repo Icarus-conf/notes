@@ -22,7 +22,7 @@ class NoteTile extends StatelessWidget {
         color: Theme.of(context).colorScheme.primary,
         borderRadius: BorderRadius.circular(8),
       ),
-      margin: EdgeInsets.only(
+      margin: const EdgeInsets.only(
         top: 10,
         right: 25,
         left: 25,
@@ -47,7 +47,7 @@ class NoteTile extends StatelessWidget {
               ),
               backgroundColor: Theme.of(context).colorScheme.background,
             ),
-            icon: Icon(Icons.more_vert),
+            icon: const Icon(Icons.more_vert),
           ),
         ),
       ),

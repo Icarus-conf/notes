@@ -21,11 +21,11 @@ class SettingsPage extends StatelessWidget {
           color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(12),
         ),
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
           vertical: 20.0,
           horizontal: 25.0,
         ),
-        margin: EdgeInsets.only(
+        margin: const EdgeInsets.only(
           left: 25,
           right: 25,
           top: 10,

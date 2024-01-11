@@ -18,23 +18,23 @@ class MyDrawer extends StatelessWidget {
               color: Theme.of(context).colorScheme.inversePrimary,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           DrawerTile(
             title: "Notes",
-            leading: Icon(Icons.home),
+            leading: const Icon(Icons.home),
             onTap: () => Navigator.pop(context),
           ),
           DrawerTile(
             title: "Settings",
-            leading: Icon(Icons.settings),
+            leading: const Icon(Icons.settings),
             onTap: () {
               Navigator.pop(context);
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => SettingsPage(),
+                    builder: (context) => const SettingsPage(),
                   ));
             },
           ),
