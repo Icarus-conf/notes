@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:notes/components/drawer.dart';
 import 'package:notes/components/note_tile.dart';
 import 'package:notes/components/text_format.dart';
+import 'package:notes/components/textfield.dart';
 import 'package:notes/models/note.dart';
 import 'package:notes/models/note_database.dart';
 import 'package:provider/provider.dart';
@@ -31,13 +32,8 @@ class _NotesPageState extends State<NotesPage> {
             borderRadius: BorderRadius.all(Radius.circular(5.0))),
         backgroundColor: Theme.of(context).colorScheme.background,
         elevation: 0,
-        content: TextField(
-          controller: textController,
-          decoration: const InputDecoration(
-            border: OutlineInputBorder(),
-          ),
-          maxLines: 7,
-          minLines: 5,
+        content: TextFieldFormat(
+          textController: textController,
         ),
         actions: [
           MaterialButton(
@@ -71,13 +67,8 @@ class _NotesPageState extends State<NotesPage> {
             borderRadius: BorderRadius.all(Radius.circular(5.0))),
         backgroundColor: Theme.of(context).colorScheme.background,
         title: const Text('Update Note'),
-        content: TextField(
-          controller: textController,
-          decoration: const InputDecoration(
-            border: OutlineInputBorder(),
-          ),
-          maxLines: 7,
-          minLines: 5,
+        content: TextFieldFormat(
+          textController: textController,
         ),
         actions: [
           MaterialButton(

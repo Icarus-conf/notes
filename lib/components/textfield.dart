@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
 
 class TextFieldFormat extends StatelessWidget {
-  const TextFieldFormat({super.key});
+  final TextEditingController? textController;
+  const TextFieldFormat({
+    super.key,
+    this.textController,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return TextField();
+    return TextField(
+      controller: textController,
+      decoration: const InputDecoration(
+        border: OutlineInputBorder(),
+      ),
+      maxLines: 7,
+      minLines: 5,
+    );
   }
 }
