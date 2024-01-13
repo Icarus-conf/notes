@@ -33,6 +33,8 @@ class NoteTile extends StatelessWidget {
           child: PoppinsText(
             text: text,
             fontS: 16,
+            textOverflow: TextOverflow.ellipsis,
+            maxLines: 1,
           ),
         ),
         trailing: Builder(

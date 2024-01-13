@@ -7,6 +7,8 @@ class PoppinsText extends StatelessWidget {
   final Color? color;
   final FontWeight? fontWeight;
   final TextAlign? textAlign;
+  final TextOverflow? textOverflow;
+  final int? maxLines;
 
   const PoppinsText({
     super.key,
@@ -15,6 +17,8 @@ class PoppinsText extends StatelessWidget {
     this.color,
     this.fontWeight,
     this.textAlign,
+    this.textOverflow,
+    this.maxLines,
   });
 
   @override
@@ -27,6 +31,8 @@ class PoppinsText extends StatelessWidget {
         fontWeight: fontWeight,
       ),
       textAlign: textAlign,
+      overflow: textOverflow,
+      maxLines: maxLines,
     );
   }
 }
