@@ -14,8 +14,9 @@ class TextFieldFormat extends StatelessWidget {
       decoration: const InputDecoration(
         border: OutlineInputBorder(),
       ),
-      maxLines: 7,
-      minLines: 5,
+      maxLines: null,
+      keyboardType: TextInputType.multiline,
+      textAlign: TextAlign.start,
     );
   }
 }

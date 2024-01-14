@@ -40,6 +40,7 @@ class NoteTile extends StatelessWidget {
         trailing: Builder(
           builder: (context) => IconButton(
             onPressed: () => showPopover(
+              direction: PopoverDirection.top,
               width: 100,
               height: 100,
               context: context,

@@ -44,9 +44,11 @@ class _NotesPageState extends State<NotesPage> {
 
               Navigator.pop(context);
             },
-            child: const PoppinsText(
-              text: 'Create',
-              fontS: 16,
+            child: CircleAvatar(
+              backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+              child: Icon(
+                Icons.add,
+              ),
             ),
           ),
         ],
@@ -135,7 +137,6 @@ class _NotesPageState extends State<NotesPage> {
               itemCount: currentNotes.length,
               itemBuilder: (context, index) {
                 final note = currentNotes[index];
-
                 return NoteTile(
                   text: note.text,
                   onEditPressed: () => updateNote(note),
@@ -143,9 +144,6 @@ class _NotesPageState extends State<NotesPage> {
                 );
               },
             ),
-          ),
-          SizedBox(
-            height: 10,
           ),
         ],
       ),
